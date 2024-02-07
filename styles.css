@@ -21,6 +21,7 @@ body {
     align-items: start; /* Align items to the top of each row */
     max-width: 800px; /* Limit the maximum width of the grid */
     padding: 20px; /* Add some padding to the grid */
+    margin-top: 20px; /* Add additional margin to top to ensure visibility of top book */
 }
 
 .book {
@@ -62,10 +63,10 @@ body {
 /* Styles for mobile */
 @media only screen and (max-width: 600px) {
     .catalogue {
-        display: block; /* Change to block layout for mobile */
+        grid-template-columns: 1fr; /* Change to single column layout for mobile */
         padding: 10px; /* Adjust padding for mobile */
     }
-    
+
     .book {
         margin-bottom: 20px; /* Add space between book items on mobile */
     }
