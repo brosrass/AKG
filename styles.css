@@ -1,3 +1,4 @@
+/* Styles for desktop */
 body {
     background-color: #f8f9fa; /* Set a background color for the body */
     font-family: Arial, sans-serif; /* Choose a font family for text */
@@ -10,7 +11,6 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* Add any existing styles for the body here */
 }
 
 .catalogue {
@@ -57,4 +57,16 @@ body {
 .book:hover a {
     background-color: rgba(255, 255, 255, 0.9);
     color: #555;
+}
+
+/* Styles for mobile */
+@media only screen and (max-width: 600px) {
+    .catalogue {
+        display: block; /* Change to block layout for mobile */
+        padding: 10px; /* Adjust padding for mobile */
+    }
+    
+    .book {
+        margin-bottom: 20px; /* Add space between book items on mobile */
+    }
 }
