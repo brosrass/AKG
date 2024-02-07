@@ -14,18 +14,16 @@ body {
 }
 
 .catalogue {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-    justify-content: center; /* Center items horizontally */
-    align-items: start; /* Align items to the top of each row */
-    max-width: 800px; /* Limit the maximum width of the grid */
-    padding: 20px; /* Add some padding to the grid */
-    margin-top: 20px; /* Add additional margin to top to ensure visibility of top book */
+    display: flex; /* Use flexbox layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: flex-start; /* Align items to the left */
+    max-width: 800px; /* Limit the maximum width of the catalogue */
+    padding: 20px; /* Add some padding to the catalogue */
 }
 
 .book {
-    width: 100%;
+    width: calc(33.33% - 20px); /* Set width of each book item (3 items per row) */
+    margin: 10px; /* Add margin around each book item */
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -62,12 +60,7 @@ body {
 
 /* Styles for mobile */
 @media only screen and (max-width: 600px) {
-    .catalogue {
-        grid-template-columns: 1fr; /* Change to single column layout for mobile */
-        padding: 10px; /* Adjust padding for mobile */
-    }
-
     .book {
-        margin-bottom: 20px; /* Add space between book items on mobile */
+        width: calc(50% - 20px); /* Set width of each book item (2 items per row) for mobile */
     }
 }
