@@ -60,7 +60,15 @@ body {
 
 /* Styles for mobile */
 @media only screen and (max-width: 600px) {
+    .catalogue {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+        padding-top: 40px; /* Add additional padding to the top */
+    }
+
     .book {
         width: calc(50% - 20px); /* Set width of each book item (2 items per row) for mobile */
+        margin: 10px; /* Add margin around each book item */
     }
 }
