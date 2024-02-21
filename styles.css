@@ -73,6 +73,7 @@ body {
     .book {
         width: calc(50% - 20px); /* Set width of each book item (2 items per row) for mobile */
         margin-bottom: 20px; /* Add margin between rows */
+        margin-top: 10px; /* Add margin to the top of each book */
     }
 }
 
